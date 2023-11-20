@@ -1,0 +1,43 @@
+[
+  {
+    "fileName": "https://i.ytimg.com/vi/R-lwczYI_HY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA4t972YyuVURULKGf1OdTwhzKGbw",
+    "caption": "triangle Choke",
+    "gi": "false",
+    "description": " this is when you are on your back and you have your legs wrapped around your opponents neck and you are choking them out.",
+    "difficulty": "easy"
+  },
+
+  {
+    "fileName": "https://d2779tscntxxsw.cloudfront.net/6491f82ae45af.png?width=650&quality=80",
+    "caption": "leg lock",
+    "gi": "false",
+    "description": " this is when you are on your back and you have your legs wrapped around your opponents leg and you are trying to break their leg.",
+    "difficulty": "hard"
+  },
+
+  {
+    "fileName": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FoXMlp8jPvyY%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=f67b4e2013b33594db4861074c34cb28af61cdafe9b418e219f8e8e23ff20627&ipo=images",
+    "caption": "Kneebar",
+    "gi": "true",
+    "description": "this is when you are on your back and you have your legs wrapped around your opponents leg and you are trying to break their leg.",
+    "difficulty": "easy"
+  },
+
+  {
+    "fileName": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bjjheroes.com%2Fwp-content%2Fuploads%2F2016%2F02%2Fbow-arrow-thumb.jpg&f=1&nofb=1&ipt=bef7e4485676f0c1fdfad7fc48e6a622332b03e41d05b2d30cbe627a043fa17b&ipo=images",
+    "caption": "Bow and arrow choke",
+    "gi": "true",
+    "description": " this is when you are on your back and you have your legs wrapped around your opponents neck and you are choking them out.",
+    "difficulty": "medium"
+  },
+
+  {
+    "fileName": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgrapplinginsider.com%2Fwp-content%2Fuploads%2F2021%2F03%2FDean-Lister.jpg&f=1&nofb=1&ipt=046544a8a11967414743d42e5d69700714504f3deb216bb1dd348bf0bb133366&ipo=images",
+    "caption": "Heel hook",
+    "gi": "false",
+    "description": " this is when you are on your back and you have your legs wrapped around your opponents leg and you are trying to break their leg.",
+    "difficulty": "hard"
+  }
+
+  
+]

@@ -1,0 +1,155 @@
+/*  You can only use the "slash star ... star slash" style comment inside a style sheet */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  /* Prevents tiny white border inside browser window. */
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  background-color: antiquewhite; /* red, green, blue (255 is max)
+                                                         this is the turqoise color */
+  color: rgb(93, 31, 12); /* color of font */
+  font-family: sans-serif; /* "no tail" font is more readable for small font */
+  font-size: 1.2rem;
+}
+
+#titleNav {
+  display: flex;
+  flex-direction: column;
+
+  /* titleNav is fixed, always at the top */
+
+  /* position fixed removes the element from the normal flow, 
+                   placing it w.r.t. the browser's edge as specified by top/bottom, left/right */
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  z-index: 1; /* To make sure titleNav is on top of content, 
+                                   give it a higher z-index than content 
+                                   (which has the default value, zero). */
+  width: 100%; /* fixed elements are not 100% by default like other divs would be */
+
+  font-family: serif;
+  letter-spacing: 0.1rem; /* spaces out letters a bit */
+
+  padding: 0.7rem;
+}
+
+#titleText {
+  /* flex attributes */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* flex attribute will push title left and nav right, with "space between" */
+
+  /* flex attributes */
+  align-items: center; /* center the items vertically */
+  font-size: 0.5rem;
+}
+
+#pageTitle {
+  font-size: 0.5rem;
+}
+
+#title {
+  font-size: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem; /* spaces out letters a bit */
+  white-space: wrap; /* don't allow the title to wrap */
+}
+
+#nav {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#nav a {
+  /* this selector applies to links within #nav */
+  text-decoration: none; /* Do not want links in "nav" to be underlined */
+  color: #bca6a3; /* light gray: to specify color for links, you have to style the "a" tag */
+}
+
+#content {
+  /* Add padding top to prevent titleNav from covering up top of content. 
+                           add padding bottom to prevent bottom content from getting hidden under footer. */
+  padding: 2rem;
+  padding-top: 9rem; /* prevent the top of the content from getting hidden under the fixed titleNav */
+  padding-bottom: 2rem; /* prevent the the bottom of the content from getting hidden under the fixed footer */
+  text-align: center;
+}
+
+#content img {
+  /* this selector applies to images within #content */
+  width: 90%;
+  border-radius: 0.7rem;
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.6); /* color is black which is 60% solid */
+}
+
+#footer {
+  /* footer fixed, always at the bottom left */
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: 1; /* make sure footer is on top of content which would have default z-index value of 0 */
+
+  width: 100%; /* fixed elements are not 100% by default like other divs would be */
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#titleNav,
+#footer {
+  background-color: rgb(131, 9, 9);
+  color: #000000;
+}
+
+/* this is for the h1 tag in the content section */
+h1 {
+  display: flex;
+  flex-direction: column;
+}
+/* desktop only */
+@media only screen and (min-width: 38rem) {
+  /* this size is tailored to size of "web site title" */
+
+  /* in desktop the titleNav is not as tall, so less top margin needed to prevent titleNav from hiding top of for content */
+  #content {
+    margin-top: 8rem;
+    /* color: red;  /* I added this to debug when the desktop rules kick in */
+  }
+
+  #titleNav {
+    /* flex attributes */
+    flex-direction: row;
+    justify-content: space-between; /* flex attribute will push title left and nav right, with "space between" */
+  }
+
+  #title {
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.07rem; /* spaces out letters a bit */
+    white-space: wrap; /* don't allow the title to wrap */
+
+    max-width: 30%; /* limit the width of the title */
+  }
+
+  #content img {
+    /* this selector applies to images within #content */
+    width: 40%;
+    border-radius: 0.5rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.6); /* color is black which is 60% solid */
+  }
+}
+
+.bjj img {
+  width: 30%;
+}
+
+.car button {
+  background-color: rgb(33, 60, 100);
+}

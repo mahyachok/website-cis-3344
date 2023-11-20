@@ -1,0 +1,19 @@
+/* This file should contain whatever stylistic changes you want to make for YOUR 
+   drop down menus. Don't change ".dropDown .show" or ".dropDown .hide" or else 
+   probably you'll ruin the hide/show functionality of the drop down framework code.
+*/
+
+.dropDown {
+  background-color: black;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+.dropDown .dropContent a {
+  color: lightblue;
+}
+
+.dropDown .dropContent {
+  box-shadow: 0.25rem 0.25rem 0.5rem rgb(92, 10, 40);
+  /* position absolute aligns with its 1st non static parent (.dropDown)  */
+}
