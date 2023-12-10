@@ -1,0 +1,49 @@
+.editList {
+    background-color: #CCCCCC;
+    margin:1rem;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0rem; /* 1st is top/bottom, 2nd is left/right */;
+}
+
+.editList .ele {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* put extra space between eleInfo and the x delete icon */
+
+    background-color: #DDDDDD;
+    margin:0.25rem; 
+    padding:0rem; /* 1st is top/bottom, 2nd is left/right */;
+    border-radius: 0.5rem;
+}
+
+.editList .ele .clickable {
+    background-color: #EEEEEE;
+    padding:0.25rem; /* 1st is top/bottom, 2nd is left/right */
+    border-radius: 0.25rem;
+    height: 1rem;
+    padding:0.25rem;
+    margin:0.25rem;
+    font-weight:bold;
+}
+
+.editList .ele .eleInfo {
+    display:flex;
+    flex-direction: row;
+}
+
+.editList .ele .eleInfo h4 {
+    margin:.25rem 0rem;  /* 1st is top/bottom, 2nd is left/right */
+}
+
+.editList .ele .eleInfo p {
+    font-size:0.7rem;
+    margin:.1rem 0rem; /* 1st is top/bottom, 2nd is left/right */
+}
+
+.editList .ele .eleInfo img {
+    height: 3rem;
+    min-height: 3rem; /* if an invalid image url is provided, keeps the vertical sizing good */
+    margin:0.25rem;
+    border-radius: 0.5rem;
+}
+

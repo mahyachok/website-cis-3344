@@ -1,0 +1,73 @@
+.editArea {
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.25rem 0.25rem #444444;
+    text-align: left;
+    margin:1rem;
+    font-size: 0.7rem;
+    
+    position: fixed;
+    z-index:2;
+    top:2rem;
+    left:8rem;
+    width: 70%; 
+}
+
+/* count padding as part of width for everything in .editArea */
+.editArea * {
+    box-sizing: border-box; 
+}
+
+.editArea .row {
+    background-color: #EEEEEE;
+    border-radius: 0.25rem;
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 0.5rem;
+}
+
+.editArea .row .prompt {
+    width: 98%;
+    margin: 1%;
+}
+
+.editArea .row input {
+    border-radius: 0.25rem;
+    width: 98%;
+    margin: 1%;
+}
+
+.editArea .row .error {
+    width: 98%;
+    margin: 1%;
+    color: maroon;
+}
+
+.editArea button {
+    margin: 0rem 0.5rem;  /* first is top/bottom, second is left right */
+}
+
+.editArea .recLevelMsg {
+    font-weight: bold;
+}
+
+/* desktop only */
+@media only screen and (min-width: 40rem) { 
+
+    .editArea .row {
+        flex-direction: row; 
+    }
+
+    .editArea .row .prompt {
+        width: 23%;
+    }
+
+    .editArea .row input {
+        width: 31%;
+    }
+
+    .editArea .row .error {
+        width: 38%;
+    }
+}

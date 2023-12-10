@@ -4,6 +4,30 @@ function PlainBlog() {
   var content = `
 
 
+<p>
+
+12/8/23
+
+
+alright. i feel like i sort of misunderstand of css styling works. but i think i undertand enough. im having trouble validating my inputs and im
+not really sure how to do it. i did the delete button, easy. also the edit pop up is on the top of the page all the time. im not sure if thatd 
+have me lose points. 
+
+
+
+</p>
+
+
+
+<p>
+12/5/23
+
+i  did not do my previous homework so kit was somewhat hard to do this one becouse i needed to do everyhing this homework required on top 
+of needing to do valudation so it was somewhat diffucult
+
+</p>
+
+
 
 
 

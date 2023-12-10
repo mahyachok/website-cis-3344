@@ -9,7 +9,7 @@ function MoveImageR() {
     // that (when changed by the React provided setter function 'setItems')
     // should redisplay this component. Set its initial value to [], an empty array.
     const [items, setItems] = React.useState([]);
-    const [items2, setItems2] = React.useState([]);
+  const [items2, setItems2] = React.useState([]);
    
 
 
@@ -25,7 +25,6 @@ function MoveImageR() {
 
 
     var newMoveImages;
-    var newMoveImagesLeg;
     // useEffect takes two params. First is function to be run, 
     // second is list of state variables that (if they change) will 
     // cause that function to be run again. 
@@ -37,6 +36,7 @@ function MoveImageR() {
     // would be run any time that a state variable changes (not good). 
     React.useEffect(
         () => {
+
             // ajax_alt takes three parameters: the URL to read, Success Fn, Failure Fn.
             ajax_alt(
                 //NOTE: this only has the ../ because the code is in a subfolder... 
@@ -78,34 +78,47 @@ function MoveImageR() {
 
                 
             );
-            
 
+         
+
+            
+            
+        },
+        [] // list of state variables. empty means run just once
+    );
+
+    /*
+    React.useEffect(
+        () => {
+
+            // ajax_alt takes three parameters: the URL to read, Success Fn, Failure Fn.
             ajax_alt(
                 //NOTE: this only has the ../ because the code is in a subfolder... 
-                "json/move2.json", // URL for AJAX call to invoke
+                "../json/move2.json", // URL for AJAX call to invoke
                 
-                function (MoveLegList) {   // ajax_alt calls this function if ajax call successful 
+                function (MoveList) {   // ajax_alt calls this function if ajax call successful 
 
-                    console.log("AJAX call successful, leglist on next line:");
-                    console.log(MoveLegList);
+                    console.log("AJAX call successful, catList on next line:");
+                    console.log(MoveList);
 
                     // map function creates newCats as an array of image file names from catList,
                     // an array of  objects (where the image file name was in property 'pic').
-                    newMoveImagesLeg = MoveLegList.map(function (moveLeg) {
+                    newMoveImages = MoveList.map(function (move) {
                         return {
-                            fileName: moveLeg.fileName,
-                            caption: moveLeg.caption,
-                            gi: moveLeg.gi,
-                            description: moveLeg.description,
-                            difficulty: moveLeg.difficulty
+                            fileName: move.fileName,
+                            caption: move.caption,
+                            gi: move.gi,
+                            description: move.description,
+                            difficulty: move.difficulty
                         };
                     });
 
               
-                    console.log("new legs on next line");
-                    console.log(newMoveImagesLeg);
 
-                    setItems2(newMoveImagesLeg);
+                    console.log("newCats on next line");
+                    console.log(newMoveImages);
+
+                    setItems2(newMoveImages);
 
                     setIsLoading(false);
                 },
@@ -119,10 +132,14 @@ function MoveImageR() {
 
                 
             );
+
+         
+
+            
+            
         },
         [] // list of state variables. empty means run just once
-    );
-
+    ); */
     if (isLoading) {
         return <div> Loading... </div>
     }
@@ -133,13 +150,12 @@ function MoveImageR() {
         </div>
     }
 
-
     return (
         <div>
             <MakeMoveImageR picObjList={items} ssTitle="arm submissions" />
-
-            <MakeMoveImageR picObjList={items2} ssTitle="leg submissions" />
+            
            
+            
             <MakeMoveImageR />
         </div>
     );

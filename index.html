@@ -14,14 +14,14 @@
     <link href="style/style_sheet.css" rel="stylesheet" type="text/css" />
     <link href="style/slideShow.css" rel="stylesheet" type="text/css" />
 
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script crossorigin='anonymous' src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin='anonymous' src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
     <!-- This next CDN lets you use JSX (looks like HTML tags in JS) -->
-    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script crossorigin='anonymous' src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 
     <!-- This lets you use React Routing -->
-    <script src="https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js"></script>
+    <script crossorigin='anonymous' src="https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js"></script>
 
     <style></style>
   </head>
@@ -35,11 +35,19 @@
     <script src="js/reusable/MakeMoveImageJ.js"></script>
     <script src="js/reusable/ajax.js"></script>
     <script src="js/reusable/ajax_alt.js"></script>
+    <script src="js/reusable/MakeCrudList.js"></script>
+    <script src="js/reusable/MakeEditArea.js"></script>
+    <script src="js/reusable/MakeTag.js"></script>
+    <script src="js/reusable/Validate.js"></script>
+
 
     <!-- Followed by the Content Generating Functions, either Plain or React -->
     <script src="js/content/PlainBlog.js"></script>
     <script src="js/content/Positions.js"></script>
     <script src="js/content/MoveImageJ.js"></script>
+    <script src="js/content/TournamentList.js"></script>
+    <script src="js/content/UpcomingTournamentList.js"></script>
+
 
     <!-- Because these React components all use JSX, you need the type="text=babel" for each -->
 
@@ -88,6 +96,8 @@
                 <div class="dropContent">
                   <Link to="/Positions">Positions</Link> <br />
                   <Link to="/MoveImageJ">Images (not React)</Link> <br />
+                  <Link to="/TournamentList"> Past Tournaments List</Link> <br />
+                  <Link to="/UpcomingTournamentList">Upcoming Tournaments List</Link>
                 </div>
               </div>
 
@@ -120,6 +130,19 @@
               path="/MoveImageJ"
               component={() => <ConvertEle ele={MoveImageJ()} />}
             />
+
+            <Route
+              path="/TournamentList"
+              component={() => <ConvertEle ele={TournamentList()} />}
+            />
+
+            <Route
+              path="/UpcomingTournamentList"
+              component={() => <ConvertEle ele={UpcomingTournamentList()} />}
+
+
+            />
+
             <Route path="/MoveSubmissionsR" component={MoveSubmissionsR} />
             <Route path="/MoveImageR" component={MoveImageR} />
           </div>
