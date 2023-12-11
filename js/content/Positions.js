@@ -1,31 +1,52 @@
 "use strict";
 function Positions() {
   var ele = document.createElement("div");
-  ele.classList.add("positions");
+  ele.innerHTML = `
+
+  <div class="firstDiv ssHolder">
+  <h3>Arm Submissions</h3>
+  </div>
+
+<div class="secondDiv ssHolder">
+  <h3>Leg Submissions</h3>
+</div>
+
+
+ 
+`;
+
+ele.classList.add("positions");
+
+var firstDiv = ele.getElementsByClassName("firstDiv ssHolder")[0];
+var secondDiv = ele.getElementsByClassName("secondDiv ssHolder")[0];
+
+
+
+
 
 
 
 
   var bjj1 = MakeBJJ({
     positionName: "rear naked choke",
-    moveImage: "userPics/rear-naked-choke.jpg",
+    moveImage: "pics/rear-naked-choke.jpg",
     Gi: true,
 
   });
 
-  ele.appendChild(bjj1);
+  firstDiv.appendChild(bjj1);
 
 
 
 
   var bjj2 = MakeBJJ({});
 
-  ele.appendChildbjj2(bjj2);
+  secondDiv.appendChild(bjj2);
 
 
 
 
-  ele.innerHTML = content;
-  ele.classList.add("blog");
+
+  ele.classList.add("positions");
   return ele;
 }

@@ -13,6 +13,19 @@ function PlainBlog() {
 
 
 <p>
+i think i fixed hw03. i made positions work and i added an ability to add an image to MakeBJJR.
+the js styling for positions is all goofy though. 
+
+</p>
+
+
+
+
+
+
+
+
+<p>
 
 12/8/23
 

@@ -1,0 +1,12 @@
+
+.ssFlex {
+  display:flex;
+  flex-direction:column;
+}
+.ssFlex .ssHolder {
+  width: 32%;
+  box-sizing:border-box;
+  text-align:center;
+  margin-left: 0.5%;
+  margin-right:0.5%;
+}

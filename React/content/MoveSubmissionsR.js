@@ -3,17 +3,20 @@ function MoveSubmissionsR() {
   return (
     <div>
 
-      <MakeBJJR />
+      
 
       <MakeBJJR positionName="kimora"
-        moveImage="pics/kimora.webp"
+        moveImage="pics/kimora.jpg"
         Gi= "true" />
 
 
       <MakeBJJR positionName="armbar"
-        moveImage="pics/armbar.webp"
+        moveImage="pics/armbar.jpg"
         Gi= "false"
       />
+
+      <MakeBJJR />  
+
     </div>
   );
 
