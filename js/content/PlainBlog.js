@@ -5,6 +5,14 @@ function PlainBlog() {
 
 
 <p>
+12/11/23
+
+ i fixed the makveMoveImageR as per the suggestion of professor sally. i split it up into two parts MakeMoveImageR_legs and MakeMoveImageR_arms
+ then called it in move image r
+</p>
+
+
+<p>
 
 12/8/23
 
